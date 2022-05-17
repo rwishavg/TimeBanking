@@ -1,0 +1,177 @@
+:root {
+  --dbrown: #a08a59;
+  --beige: #dac294;
+  --greyish: #dfdfdf;
+  --off-white: #efefef;
+  --black: #000000;
+  --jgreen: #239695;
+  --fjord: #43426d;
+  --rose: #f24e72;
+  --stone: #727475;
+  --athens: #eaebed;
+  --glacier: #87bbc6;
+  --mariner: #2e7ccb;
+  --brown: #8b7b75;
+  --cello: #1c395d;
+  /* #63E9FF */
+}
+
+/*
+The above colors are now in our css stylesheet as custom bootstrap classes
+
+  --dbrown: #a08a59;
+  --beige: #dac294;
+  --greyish: #752929;
+  --off-white: #efefef;
+  --black: #000000;
+  --jgreen: #239695;
+  --fjord: #43426d;
+  --rose: #f24e72;
+  --stone: #727475;
+  --athens: #eaebed;
+  --glacier: #87bbc6;
+  --mariner: #2e7ccb;
+  --brown: #8b7b75;
+  --cello: #1c395d;
+*/
+
+body {
+  background: var(--athens);
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+h1,
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.loginStuff {
+  width: 500px;
+}
+
+.inputStuff {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+.arrow {
+  cursor: pointer;
+}
+.arrow:hover {
+  color: var(--brown);
+}
+
+.faq:hover {
+  background: var(--greyish);
+  color: var(--rose);
+}
+
+.linkHover {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.linkHover:hover {
+  color: var(--mariner);
+}
+
+.changeFont {
+  font-family: "CashCurrency";
+}
+
+.hoverStuff {
+  color: white;
+}
+
+.hoverStuff:hover {
+  color: var(--mariner);
+}
+
+.NavFont {
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  text-shadow: 0 0 3px var(--cello);
+  color: var(--black) !important;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 3px var(--cello);
+  color: var(--black) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .loginStuff {
+    width: 100%;
+  }
+  .inputStuff {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ButtonMargin {
+    margin-bottom: 10px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.queslen {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "CashCurrency";
+  src: local("CashCurrency"), url("./CashCurrency.ttf") format("truetype");
+}
+
+@media screen and (max-width: 355px) {
+  .NavFont {
+    font-size: 1rem;
+  }
+}

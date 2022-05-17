@@ -1,0 +1,41 @@
+.splashimage {
+  background-image: url("../img/clock.svg");
+  /* z-index: 10; */
+  /* margin: auto; */
+  height: 70%;
+  width: 70%;
+  overflow-y: hidden;
+  background-size: 100%;
+  /* background: fixed; */
+  position: relative;
+}
+.splashmobile {
+  display: none;
+}
+.typed {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 50pt;
+  color: #000000;
+  text-align: center;
+  text-shadow: 2px 2px #1c395d;
+
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .typed {
+    font-size: 25pt;
+  }
+  .splashimage {
+    display: none;
+  }
+  .splashmobile {
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" href="FontStyles.css">
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <title>SMIT Weaver</title>
+  <!-- <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/bootstrap.bundle.js.map"></script> -->
+  <script src="./js/Jquery.js"></script>
+  <script src="https://kit.fontawesome.com/b2b4a4bb36.js" crossorigin="anonymous"></script>
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+  crossorigin="anonymous"></script> -->
+
+  <script src="./js/forNav.js"></script>
+</head>
+
+<body id="#bootstrapOverrides">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    $('body').on("click", ".nav-item", function () {
+      $('.navbar-collapse').collapse('hide');
+    })
+  </script>
+</body>
+
+</html>
